@@ -18,24 +18,39 @@
     8.() Bonus Create a button that you could click to display the restaurant's inventory.-->
 
 
+<script src="orderPlaceOld.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast Food APP</title>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-</head>
+  </head>
 <body> 
-    <header>
-      <center><h1>RESTAURANT MENU</h1></center>
-    </header>
-       <center><h2>Menu</h2></center>
-        <input type="text id="myBtn" placeholder="What would you like?">
 
-            <!-- <p id="demo">Click me.</p> -->
+<header>
+      <center><h1>BEST BURGERS IN TOWN</h1></center>
+</header>
+       <center><h2>Menu:<br>
+      Hamburger<br>
+    Cheeseburger<br>
+  Hotdog<br>
+Chicken Sandwich<br>
+French Fries<br>
+Coke<br>
+Sprite<br>
+Rootbeer
+</h2></center>
+<div id="menu"></div>
+<h3>Order Choice: " item: qty, nextItem: qty "</h3>
+<label for="order">Order:</label>
+<input type="text" id="order">
+<br>
+        <!-- <input type="text id="myBtn" placeholder="What would you like?">
 
-      <button type="button" class="button" id="btMenu">Place Order</button>
+            <!-<p id="demo">Click me.</p> -->
+
+      <!-- <button type="button" class="button" id="btMenu">Place Order</button>
       <ul id="liItemMenu" class="ul">
        <li>
         <input type="button" class="button" id="btItem" value="Item">
@@ -61,7 +76,7 @@
             <td>Total :</td>
             <td id="total"></td>
           </tr>
-        </table>
+        </table> --> 
         <!-- <p id="myP" value="success">I am a paragraph.</p>
 
         <p>Click the button get the HTML content of the p element.</p>
@@ -70,9 +85,15 @@
         
         <p id="demo"></p>
          -->
-        
-</body>
+<br>
+<button id="submitBtn">Submit Order</button>
+<br>
+<br>
+<h3>Current Order:</h3>
+<br>
+<ul id="showOrder"></ul>      
 <script src="orderPlaceOld.js"></script>
+</body>
 </html>
 
     <!-- <div>
@@ -82,4 +103,5 @@
             <button onclick="myFunction()">Tofuburger</button>
             <button id="myBtn">Place order</button>
         </div> -->
-        
+    
+          
