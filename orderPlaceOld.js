@@ -77,7 +77,7 @@ showOrder.innerHTML = customerOrder.value;
     let order = parseOrder(customerOrder.value);
     console.log(order);
     customerOrder.value = '';
-  });
+  
   function parseOrder(customerOrder) {
 
   const parsedObj = [];
